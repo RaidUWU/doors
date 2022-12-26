@@ -19,23 +19,23 @@ local HardCore = {
 }
 
 local DepthW = {
-    Title = "Finally Free",
-    Desc = "Encounter Depth",
-    Reason = "Survive Depth",
+    Title = "why are you running?",
+    Desc = "Encounter deer god",
+    Reason = "Survive deer god",
     Image = "https://github.com/MuhXd/DoorSuff/blob/main/DoorsModes/Png.png?raw=true",
     id = 2,
 }
 
 local Depth = {
-    Title = "The Entity Is Still Freezing",
-    Desc = "It's So Cold",
-    Reason = "Dont Survive Depth",
+    Title = "...",
+    Desc = "It's so hard",
+    Reason = "Dont Survive deer god",
     Image = "https://github.com/MuhXd/DoorSuff/blob/main/DoorsModes/Png.png?raw=true",
     id = 3,
 }
 
 local Smiles = {
-    Title = "Income The Frowners",
+    Title = "jiggle the balls",
     Desc = "Stop Smiling",
     Reason = "Encounter and Survive Smiler",
     Image = "https://tr.rbxcdn.com/74de4e7b5e39c15126ca858f0ad19c80/420/420/Image/Png",
@@ -301,7 +301,7 @@ if PlayersIngame > 1 then -- if more then one then waits for link
 
 
     game.StarterGui:SetCore("ChatMakeSystemMessage", {
-        Text = "Doors Hard Mode ON! By MuhammadGames (MuhammadGames#0017) and Volta (volta#2161)",
+        Text = "Doors but ohio ON! By Victornarfitalikkj atila yohan and raid",
         Color = Color3.fromRGB(255, 0, 0),
         Font = Enum.Font.SourceSansBold,
         TextSize = 18,
@@ -321,9 +321,9 @@ if PlayersIngame > 1 then -- if more then one then waits for link
         --  msg:Destroy()
         --Kill=true
     until game:GetService("ReplicatedStorage").GameData.LatestRoom.Value > 0
-    print("Linked to Clients") -- linked
+    print("thanks for the port atila ;)") -- linked
     game.StarterGui:SetCore("ChatMakeSystemMessage", {
-        Text = "Linked To Clients",
+        Text = "thanks for the port atila and yohan",
         Color = Color3.fromRGB(0, 255, 0),
         Font = Enum.Font.SourceSansBold,
         TextSize = 18,
@@ -359,36 +359,54 @@ function Depth()
         local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 
         -- Create entity
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(66, 80, 255)
+game.Lighting.MainColorCorrection.Contrast = 1
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(4),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
         if  game.ReplicatedStorage.GameData.LatestRoom.Value ~= 50 then
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         else
             Wait(20)
             end
-        local Depth = Creator.createEntity({
-            CustomName = "Depth", -- Custom name of your entity
-            Model = "rbxassetid://11401769490", -- Can be GitHub file or rbxassetid
-            Speed = 200, -- Percentage, 100 = default Rush speed
-            DelayTime = 5,
-            KillRange=150,-- Time before starting cycles (seconds)
+tween to closet
+if closet.hiderinside == game.players.localplayer.Name then
+    kill
+end
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(160, 133, 70)
+game.Lighting.MainColorCorrection.Contrast = 1
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(0.1), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(4),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
+local Depth = Creator.createEntity({
+CustomName = "Depth", -- Custom name of your entity
+            Model = "rbxassetid://11931545472", -- Can be GitHub file or rbxassetid
+            Speed = 30, -- Percentage, 100 = default Rush speed
+            DelayTime = 0,
+            KillRange=30,-- Time before starting cycles (seconds)
             HeightOffset = 1,
             CanKill = true,
             BreakLights = true,
             FlickerLights = {
                 true, -- Enabled
-                0, -- Time (seconds)
+                4, -- Time (seconds)
             },
             Cycles = {
-                Min = 5,
-                Max = 5,
-                WaitTime = 3,
+                Min = 1,
+                Max = 1,
+                WaitTime = 0,
             },
             CamShake = {
                 true, -- Enabled
                 {5, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
-                100, -- Shake start distance (from Entity to you)
+                50, -- Shake start distance (from Entity to you)
             },
             Jumpscare = {
-                true, -- Enabled ('false' if you don't want jumpscare)
+                false, -- Enabled ('false' if you don't want jumpscare)
                 {
                     Image1 = "https://tr.rbxcdn.com/f0f798ca806ed372984f3b70d1b1432f/420/420/Image/Png", -- Image1 url
                     Image2 = "https://tr.rbxcdn.com/f0f798ca806ed372984f3b70d1b1432f/420/420/Image/Png", -- Image2 url
@@ -412,7 +430,7 @@ function Depth()
                     },
                 },
             },
-            CustomDialog = {"You died to who you call Depth", "Depth is faster than rush and ambush", "And he can rebound up to 1 to 9 times","use what you leared from Ambush and rush tho."}, -- Custom death message (can be as long as you want)
+            CustomDialog = {"You died to who you call rebound...", "silence is faster than rush and ambush", "And he can rebound up to 1 to 9 times","use what you leared from Ambush and rush tho."}, -- Custom death message (can be as long as you want)
         })
 
 -----[[  Debug -=- Advanced  ]]-----
@@ -449,23 +467,31 @@ end
 
 
                 -- Create entity
-                local entity = Creator.createEntity({
+
+               game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(160, 133, 70)
+game.Lighting.MainColorCorrection.Contrast = 1
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(4.9), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(4),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
+ local entity = Creator.createEntity({
                     CustomName = "Smiler", -- Custom name of your entity
-                    Model = "rbxassetid://11401769490", -- Can be GitHub file or rbxassetid
-                    Speed = 250, -- Percentage, 100 = default Rush speed
-                    DelayTime = 12, -- Time before starting cycles (seconds)
+                    Model = "rbxassetid://11921025813", -- Can be GitHub file or rbxassetid
+                    Speed = 200, -- Percentage, 100 = default Rush speed
+                    DelayTime = 3, -- Time before starting cycles (seconds)
                     HeightOffset = 0,
                     CanKill = true,
                     KillRange=100,
                     BreakLights = true,
                     FlickerLights = {
                         true, -- Enabled
-                        5, -- Time (seconds)
+                        1, -- Time (seconds)
                     },
                     Cycles = {
-                        Min = 5,
-                        Max = 5,
-                        WaitTime = 3,
+                        Min = 2,
+                        Max = 4,
+                        WaitTime = 2,
                     },
                     CamShake = {
                         true, -- Enabled
@@ -473,7 +499,7 @@ end
                         100, -- Shake start distance (from Entity to you)
                     },
                     Jumpscare = {
-                        true, -- Enabled ('false' if you don't want jumpscare)
+                        false, -- Enabled ('false' if you don't want jumpscare)
                         {
                             Image1 = "rbxassetid://11417375410", -- Image1 url
                             Image2 = "rbxassetid://11417375410", -- Image2 url
@@ -488,16 +514,16 @@ end
                             },
                             Flashing = {
                                 true, -- Enabled
-                                Color3.fromRGB(255, 0, 0), -- Color
+                                Color3.fromRGB(160, 0, 0), -- Color
                             },
                             Tease = {
                                 false, -- Enabled ('false' if you don't want tease)
                                 Min = 1,
-                                Max = 3,
+                                Max = 1,
                             },
                         },
                     },
-                    CustomDialog = {"Â¡Â¡ THIS SMILE IS LIKE ABMUSH !!", "Hide and don't Smile", "Don't get Tricked"}, -- Custom death message (can be as long as you want)
+                    CustomDialog = {"ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ THIS SMILE IS LIKE ABMUSH !!", "Hide and don't Smile", "Don't get Tricked"}, -- Custom death message (can be as long as you want)
                 })
 
                 -----[[ Advanced ]]-----
@@ -538,24 +564,31 @@ end
                 local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 
                 -- Create entity
-                local entity2 = Creator.createEntity({
+                game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(255, 0, 0)
+game.Lighting.MainColorCorrection.Contrast = 1
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(10.9), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(4),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
+local entity2 = Creator.createEntity({
                     CustomName = "Vhs!Sans", -- Custom name of your entity
-                    Model = "rbxassetid://11401769490", -- Can be GitHub file or rbxassetid
-                    Speed = 200, -- Percentage, 100 = default Rush speed
-                    DelayTime = 3, -- Time before starting cycles (seconds)
+                    Model = "rbxassetid://11931521741", -- Can be GitHub file or rbxassetid
+                    Speed = 173, -- Percentage, 100 = default Rush speed
+                    DelayTime = 5, -- Time before starting cycles (seconds)
                     HeightOffset = 0,
                     CanKill = true,
-                    KillRange = 120,
+                    KillRange = 150,
                     BreakLights = true,
                     BackwardsMovement = false,
                     FlickerLights = {
                         true, -- Enabled/Disabled
-                        10, -- Time (seconds)
+                        0, -- Time (seconds)
                     },
                     Cycles = {
-                        Min = 5,
-                        Max = 5,
-                        WaitTime = 3,
+                        Min = 1,
+                        Max = 1,
+                        WaitTime = 5,
                     },
                     CamShake = {
                         true, -- Enabled/Disabled
@@ -587,7 +620,7 @@ end
                             },
                         },
                     },
-                    CustomDialog = {"You died to who you call vhs!sans...", "Try your best to out-run him.", "I really don't have nothing else", "Just try your best to run and Hide when you can."}, -- Custom death message
+                    CustomDialog = {"You died to who you call ripper...", "Try your best to out-run him.", "I really don't have nothing else", "Just try your best to run and Hide when you can."}, -- Custom death message
                 })
 
                 ------------------------
@@ -604,10 +637,10 @@ end
         -- tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(1), {Contrast = 0.45}):Play()
         local ZoO = Creator.createEntity({
             CustomName = "200", -- Custom name of your entity
-            Model = "rbxassetid://11401769490", -- Can be GitHub file or rbxassetid
-            Speed = 200, -- Percentage, 100 = default Rush speed
+            Model = "rbxassetid://11402557910", -- Can be GitHub file or rbxassetid
+            Speed = 35, -- Percentage, 100 = default Rush speed
             DelayTime = 5, -- Time before starting cycles (seconds)
-            KillRange=150,
+            KillRange=50,
             HeightOffset = 0,
             CanKill = true,
             BreakLights = true,
@@ -659,14 +692,21 @@ end
 
 
 
-    function Baller()
+    function rebound()
         wait(50)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()  
         local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 
-        local Baller = Creator.createEntity({
+        game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(160, 133, 70)
+game.Lighting.MainColorCorrection.Contrast = 1
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(4.9), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(4),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
+local rebound = Creator.createEntity({
             CustomName = "rebound", -- Custom name of your entity
-            Model = "rbxassetid://11401769490",
+            Model = "",
             KillRange=200,
             Speed = 200, -- Percentage, 100 = default Rush speed
             DelayTime = 3, -- Time before starting cycles (seconds)
@@ -678,9 +718,9 @@ end
                 5, -- Time (seconds)
             },
             Cycles = {
-                Min = 12,
-                Max = 12,
-                WaitTime = 3,
+                Min = 5,
+                Max = 5,
+                WaitTime = 5,
             },
             CamShake = {
                 false, -- Enabled
@@ -803,24 +843,35 @@ end
             local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 
             -- Create entity
-            local Trauma = Creator.createEntity({
+tween to closet
+if closet.hiderinside == game.players.localplayer.Name then
+    kill
+end
+            game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(0, 113, 255)
+game.Lighting.MainColorCorrection.Contrast = 1
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.9), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(4),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
+local Trauma = Creator.createEntity({
                 CustomName = "Trauma", -- Custom name of your entity
-                Model = "11348456746", -- Can be GitHub file or rbxassetid
-                Speed = 600, -- Percentage, 100 = default Rush speed
-                DelayTime = 3, -- Time before starting cycles (seconds)
+                Model = "rbxassetid://11931564028", -- Can be GitHub file or rbxassetid
+                Speed = 110, -- Percentage, 100 = default Rush speed
+                DelayTime = 0, -- Time before starting cycles (seconds)
                 HeightOffset = 0,
-                CanKill = true,
+                CanKill = false,
                 KillRange = 50,
                 BreakLights = true,
                 BackwardsMovement = true,
                 FlickerLights = {
                     true, -- Enabled/Disabled
-                    5, -- Time (seconds)
+                    0, -- Time (seconds)
                 },
                 Cycles = {
                     Min = 1,
                     Max = 1,
-                    WaitTime = 2,
+                    WaitTime = 3,
                 },
                 CamShake = {
                     true, -- Enabled/Disabled
